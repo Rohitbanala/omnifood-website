@@ -1,0 +1,3 @@
+Omnifood is a modern web-based meal planning and delivery platform designed to simplify healthy eating. Built using HTML and CSS, Omnifood allows users to create personalized weekly meal plans based on their dietary preferences and food likes or dislikes. The app uses an AI algorithm to generate custom meal plans, making it easy for users to maintain a balanced and enjoyable diet.
+
+But Omnifood doesn’t stop at meal planning. We collaborate with local restaurants and cooking partners to prepare and deliver all the meals right to the user's doorstep. Users can opt for a monthly subscription plan and choose to receive either one or two meals daily throughout the month.
