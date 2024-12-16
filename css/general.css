@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+  overflow-x: hidden;
+}
+html {
+  /* why 62.5? because by 
+  defalut html font size is 
+  16px if we want to change defalut to 
+  something just by using px in this case
+  some times use may changes his fontsizes 
+  in his computer so it didnt change if set
+  to px so we put it in a %.
+  10/16 *100 = 62.5 then we can caluculate 
+  1 rem equal to how many pixels 
+  and we can scale accordingly
+     */
+  font-size: 62.5%;
+  overflow-x: hidden;
+  /* scroll-behavior: smooth; */
+}
+
+/* ********************** */
+/* general components */
+/* ********************** */
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.grid {
+  display: grid;
+  row-gap: 9.6rem;
+  column-gap: 6.4rem;
+}
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
+}
+.grid--2--cols {
+  grid-template-columns: 1fr 1fr;
+}
+.grid--3--cols {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.grid--4--cols {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.grid--5--cols {
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.grid--center-v {
+  align-items: center;
+}
+.step-img-box {
+  justify-self: center;
+}
+
+.section-how {
+  padding: 9.6rem 0;
+}
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+  color: #333;
+  letter-spacing: -0.5px;
+  font-weight: 700;
+}
+.heading-primary {
+  font-size: 5.2rem;
+
+  line-height: 1.05;
+  margin-bottom: 3.2rem;
+}
+.heading-secondary {
+  font-size: 4.4rem;
+  line-height: 1.2;
+  margin-bottom: 9.6rem;
+}
+.heading-tertiary {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
+}
+.subheading {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #cf711f;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+  letter-spacing: 0.75px;
+}
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  padding: 1.6rem 3.2rem;
+  text-decoration: none;
+  border-radius: 0.9rem;
+  font-size: 2rem;
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+  transition: all 1s;
+}
+.btn--full:link,
+.btn--full:visited {
+  color: #fff;
+  background-color: #e67e22;
+}
+.btn--full:hover,
+.btn--full:active {
+  background-color: #cf711f;
+}
+.btn--outline:link,
+.btn--outline:visited {
+  background-color: #fff;
+  color: #555;
+}
+.btn--outline:hover,
+.btn--outline:active {
+  background-color: #fdf2e9;
+  color: #555;
+  /* border: #fff solid 3px;
+  below trick to border inside using shadow
+  and not keeping offset,blur to zero */
+  /* with the inset keyword shadow added inside the box */
+  box-shadow: inset 0 0 0 3px #fff;
+}
+.btn--form {
+  background-color: #45260a;
+  color: #fdf2e9;
+  align-self: flex-end;
+  padding: 1.2rem;
+}
+.btn--form:hover {
+  background-color: #fff;
+  color: #555;
+}
+.link:link,
+.link:visited {
+  display: inline-block;
+  color: #e67e22;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 0.2rem;
+  transition: all 0.3s;
+}
+
+.link:hover,
+.link:active {
+  display: inline-block;
+  color: #cf711f;
+
+  border-bottom: 1px solid transparent;
+  padding-bottom: 0.2rem;
+}
+
+.margin-right-sm {
+  margin-right: 1.6rem !important;
+}
+.margin-bottom-md {
+  margin-bottom: 4.8rem !important;
+}
+.center-text {
+  text-align: center;
+}
+strong {
+  font-weight: 500;
+}
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+.list-icon {
+  font-size: 3rem;
+  color: #cf711f;
+}
+.list-item {
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
